@@ -8,7 +8,7 @@ The following steps can be used to quickly verify annotations and prepare GenBan
 
 <a href="https://www.ncbi.nlm.nih.gov/genbank/tbl2asn2/">tbl2asn</a> can be used to automate creation of sequence records for GenBank submission. It can be downloaded <a href="ftp://ftp.ncbi.nih.gov/toolbox/ncbi_tools/converters/by_program/tbl2asn/">here</a>.
 
-<h2>Create a submission template file<h2>
+<h2>Create a submission template file</h2>
 
 <a href="https://submit.ncbi.nlm.nih.gov/genbank/template/submission/">Create</a> GenBank submission template (a .sbt file) to be used for the project.  An .sbt file must be used with tbl2asn. If you are only checking annotations, you can create a dummy file with incomplete information. 
 
@@ -24,7 +24,7 @@ On your Verdant project page, click the "DOWNLOAD PROJECT TBL DATA" button.
 
 Unzip the file, and navigate into the directory using a terminal.
 
-<h2>Creating the upload files<h2>
+<h2>Creating the upload files</h2>
 
 Run the following commands from inside the tbl file directory downloaded from Verdant:
 
