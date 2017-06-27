@@ -1,4 +1,4 @@
-#Protocol for GenBank Submission Ready Files
+# Protocol for GenBank Submission Ready Files
 
 The following steps can be used to quickly verify annotations and prepare GenBank upload files. These steps can be done on either a Linux distribution or a Mac.
 
