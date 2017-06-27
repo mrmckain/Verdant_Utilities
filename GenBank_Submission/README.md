@@ -12,11 +12,11 @@ The following steps can be used to quickly verify annotations and prepare GenBan
 
 <h2>Download TBL files for project</h2>
 
-On your Verdant project page, click the "DOWNLOAD PROJECT TBL DATA" button.  
+On your <a href="http://verdant.iplantcollaborative.org/plastidDB/#home">Verdant</a> project page, click the "DOWNLOAD PROJECT TBL DATA" button.  
 
 <br>
 
-<img src="https://github.com/mrmckain/Verdant_Utilities/blob/master/GenBank_Submission/images/Verdant_TBL.png" width="512" alt="verdant_tbl" align="middle">
+<img src="https://github.com/mrmckain/Verdant_Utilities/blob/master/GenBank_Submission/images/Verdant_TBL.png" width="1024" alt="verdant_tbl" align="middle">
 
 <br>
 
@@ -30,7 +30,7 @@ Run the following commands from inside the tbl file directory downloaded from Ve
 	
 	mkdir upload_files
 
-	perl fix_fasta_header_for_tbl2asn.pl [This script in found in this directory.]
+	perl fix_fasta_header_for_tbl2asn.pl [This script is found in this directory.]
 
 	mv *fsa all_files/.
 
