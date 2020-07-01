@@ -1,7 +1,7 @@
 #!/usr/bin/perl -w
 
 use strict;
-#USAGE: 1-ID 2-Organism-info 3-Gene_products 4-Sequence 5-Verdant-Annotation
+#USAGE: perl verdant2genbank.pl sequencefile products_file 
 my %products;
 open my $file, "<", $ARGV[1];
 while(<$file>){
@@ -15,7 +15,7 @@ my $genus;
 my $species;
 my $accession;
 
-open my $seqfile, "<", "./sequenceFiles/" . $ARGV[0];
+open my $seqfile, "<", $ARGV[0];
 while(<$seqfile>){
 	chomp;
 	if(/>/){
@@ -27,7 +27,7 @@ while(<$seqfile>){
 }
 
 
-open my $out_anno, ">", "/var/www/plastidDB/tbl_files/" . $ARGV[0] . ".tbl";
+open my $out_anno, ">", $ARGV[0] . ".tbl";
 print $out_anno ">Features $genus\_$species\_$accession \"\[organism=$genus $species\]\"\n";
 open my $anno_file, "<", "./files/" .  $ARGV[0];
 while(<$anno_file>){
